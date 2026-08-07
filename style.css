@@ -3154,8 +3154,9 @@ body {
     border: 1.5px solid rgba(0,0,0,0.06);
 }
 .blog-btn .side-menu-icon {
-    font-size: 1.85rem;
-    color: #03cf5d;
+    width: 34px;
+    height: 34px;
+    object-fit: contain;
 }
 
 /* Responsive styling for Floating components */
