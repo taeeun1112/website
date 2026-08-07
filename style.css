@@ -1779,7 +1779,7 @@ h1.hero-main-promo {
 .footer-v2 {
     background: #1f1f1f;
     color: #a0a0a0;
-    padding: 60px 0 30px;
+    padding: 60px 0 150px;
     font-size: 0.85rem;
     line-height: 1.8;
     position: relative;
@@ -2550,12 +2550,12 @@ h1.hero-main-promo {
     
     /* Ensure page has space at bottom for sticky bar */
     body {
-        padding-bottom: 180px !important;
+        padding-bottom: 0 !important;
     }
 }
 
 body {
-    padding-bottom: 140px !important;
+    padding-bottom: 0 !important;
 }
 
 /* ===========================================
