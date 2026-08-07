@@ -1774,103 +1774,98 @@ h1.hero-main-promo {
 }
 
 /* ===========================================
-   FOOTER
+   FOOTER V2 (지역 정보 노출 포맷)
    =========================================== */
-#main-footer {
-    background: #2b2c30;
-    color: rgba(255, 255, 255, 0.75);
-    padding: 56px 0 40px;
+.footer-v2 {
+    background: #1f1f1f;
+    color: #a0a0a0;
+    padding: 60px 0 30px;
+    font-size: 0.85rem;
+    line-height: 1.8;
     position: relative;
     z-index: 10;
     border-top: 1px solid rgba(255, 255, 255, 0.06);
 }
-.footer-container {
+.footer-v2 .footer-container {
     width: 100%;
-    max-width: 1160px;
+    max-width: 1200px;
     margin: 0 auto;
-    padding: 0 28px;
+    padding: 0 24px;
 }
-.footer__top {
+.footer-v2__top {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
-    gap: 20px;
-    padding-bottom: 32px;
-    margin-bottom: 32px;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    gap: 30px;
 }
-.footer__logo-wrap {
+.footer-v2__brand {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 16px;
+}
+.footer-v2 .footer-logo-img {
+    height: 38px;
+    width: auto;
+    filter: brightness(0) invert(1);
+    display: block;
+}
+.footer-v2__biz-info p {
+    margin: 4px 0;
+    color: #a0a0a0;
+}
+.footer-v2__right {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-end;
+}
+.footer-v2__title {
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #ffffff;
+    margin-bottom: 4px;
+}
+.footer-v2__link-text {
+    margin: 0;
+    color: #a0a0a0;
+}
+.footer-v2__link {
+    color: #a0a0a0;
+    text-decoration: none;
+    transition: var(--ease-fast);
+}
+.footer-v2__link:hover {
+    color: #ffffff;
+}
+.footer-v2__divider {
+    height: 1px;
+    background: rgba(255, 255, 255, 0.08);
+    margin: 24px 0;
+}
+.footer-v2__regions {
+    font-size: 0.78rem;
+    color: #888888;
+    display: flex;
+    flex-direction: column;
     gap: 12px;
 }
-.footer__logo-img {
-    height: 40px;
-    display: block;
-    filter: brightness(0) invert(1);
+.footer-v2__regions p {
+    margin: 0;
+    line-height: 1.7;
+    word-break: keep-all;
 }
-.footer__nav {
-    display: flex;
-    gap: 28px;
-    font-size: 15px;
-    font-weight: 600;
-    color: rgba(255, 255, 255, 0.8);
+.footer-v2__regions strong {
+    color: #b0b0b0;
+    margin-right: 6px;
 }
-.footer__nav a {
-    color: rgba(255, 255, 255, 0.8);
-    transition: var(--ease-fast);
+.footer-v2__bottom {
+    text-align: center;
+    padding-top: 10px;
 }
-.footer__nav a:hover {
-    color: #fff;
-}
-.footer__info {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
-    font-size: 14.5px;
-    line-height: 1.9;
-    color: rgba(255, 255, 255, 0.65);
-    margin-bottom: 32px;
-}
-.footer__info-col p {
-    margin: 0 0 6px 0;
-    color: rgba(255, 255, 255, 0.65);
-}
-.footer__info-title {
-    font-size: 15px;
-    font-weight: 800;
-    color: #fff;
-    margin-bottom: 8px !important;
-}
-.footer__info-title--spaced {
-    margin-top: 14px !important;
-}
-.footer__bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 14px;
-    font-size: 14px;
-    padding-top: 20px;
-}
-.footer__legal {
-    display: flex;
-    gap: 20px;
-    color: rgba(255, 255, 255, 0.6);
-}
-.footer__legal a {
-    color: rgba(255, 255, 255, 0.6);
-    transition: var(--ease-fast);
-}
-.footer__legal a:hover {
-    color: #fff;
-}
-.footer__legal--strong {
-    color: #fff !important;
-    font-weight: 700;
-    text-decoration: underline;
+.footer-v2__bottom .copyright-text {
+    font-size: 0.8rem;
+    color: #666666;
 }
 
 
@@ -2079,10 +2074,8 @@ h1.hero-main-promo {
     .form-row-2col { grid-template-columns: 1fr; gap: 20px; }
 
     /* Footer */
-    .footer__top { flex-direction: column; align-items: flex-start; }
-    .footer__nav { flex-wrap: wrap; gap: 16px; }
-    .footer__info { grid-template-columns: 1fr; gap: 24px; }
-    .footer__bottom { flex-direction: column; align-items: flex-start; }
+    .footer-v2__top { flex-direction: column; align-items: flex-start; }
+    .footer-v2__right { align-items: flex-start; }
 }
 
 /* --- Floating Quick Menu --- */
