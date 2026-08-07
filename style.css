@@ -3144,7 +3144,9 @@ body {
     color: #3c1e1e !important;
 }
 .kakao-btn .side-menu-icon {
-    font-size: 2rem;
+    width: 36px;
+    height: 36px;
+    object-fit: contain;
 }
 
 /* Blog white square button */
